@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import DataBody from "./DataBody";
 import DataAreaContext from "../utils/DataAreaContext";
 
-const DataTable = () => {
+const DataTable = ({headings, users, handleSort}) => {
     const context = useContext(DataAreaContext);
 
     return(
@@ -31,8 +31,10 @@ const DataTable = () => {
                     </tr>
                 </thead>
 
-                <DataBody />
+                <DataBody users = {users} />
             </table>
         </div>
     );
 };
+
+export default DataTable;
