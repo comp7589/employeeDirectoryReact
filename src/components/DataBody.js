@@ -4,7 +4,7 @@ import React from "react";
 
 const DataBody = ({ users }) => {
     // const context = useContext(DataAreaContext);
-
+    console.log(users);
     function formatDate(date) {
         const dateArray = date.split("-");
         const year = dateArray[0];

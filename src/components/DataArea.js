@@ -106,7 +106,7 @@ const DataArea = () => {
       >
         <NavBar />
         <div className="data-area">
-          {developerState.filteredUsers.length > 0 ? <DataTable /> : <div></div>}
+          {developerState.filteredUsers.length > 0 ? <DataTable users = {developerState.users}  /> : <div></div>}
         </div>
       </DataAreaContext.Provider>
     );
